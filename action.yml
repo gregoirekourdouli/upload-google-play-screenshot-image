@@ -1,5 +1,5 @@
-name: 'Upload Android Listings'
-description: 'Upload the android application description to google play'
+name: 'Upload Android Screenshots'
+description: 'Upload the Android Application screenshots/images to Google Play'
 inputs:
   serviceAccountJson:
     description: "The service account json private key file to authorize the upload request"
@@ -14,14 +14,14 @@ inputs:
     description: "Language localization code (BCP-47 language tag)"
     required: true
   imageType:
-    description: "File containing the localized title of the app"
+    description: "Type of image to upload to Google Play"
     required: true
   imageFiles: 
-    description: "File containing the full description of the app"
+    description: "Files to upload as a 'glob' string"
     required: true
   changesNotSentForReview:
     description: "Indicates that the changes in this edit will not be reviewed until they are explicitly sent for review from the Google Play Console"
-    required: false
+    required: false 
     default: 'false'
 runs:
   using: 'node20'
