@@ -1,5 +1,9 @@
 name: 'Upload Android Screenshots'
 description: 'Upload the Android Application screenshots/images to Google Play'
+author: 'gregoirekourdouli'
+branding:
+  icon: 'truck'
+  color: 'yellow'
 inputs:
   serviceAccountJson:
     description: "The service account json private key file to authorize the upload request"
